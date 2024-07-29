@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var getGuesser = function () {
+        var secret = Math.floor(Math.random() * 10 + 1);
+    
+        return function (userNumber) {
+          if (userNumber < secret) {
+            return "Too low!";
+          } else {
+            if (userNumber === secret) {
+              return "Well done!";
+            } else {
+              return "Too high!";
+            }
+          }
+        };
+      };
+    
+      var guess = getGuesser();
+    </script>
+</body>
+</html>

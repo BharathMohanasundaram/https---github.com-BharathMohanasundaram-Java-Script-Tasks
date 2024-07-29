@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+        var dayInWeek = 3;
+        
+        console.log( days[dayInWeek] );
+        console.log( days[dayInWeek - 1] );
+        
+        var getDay = function(dayNumber) {
+            var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+            if (dayNumber >= 0 && dayNumber < days.length) {
+                return days[dayNumber];
+            } else {
+                return "Invalid day number";
+            }
+        };
+        console.log(getDay(4));
+        </script>
+</body>
+</html>

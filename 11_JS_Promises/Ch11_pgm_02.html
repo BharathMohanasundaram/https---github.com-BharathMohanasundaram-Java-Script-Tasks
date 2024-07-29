@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const doSomething = callback => {
+        setTimeout(() => {
+          const skills = ['HTML', 'CSS', 'JS']
+          callback(false, skills)
+        }, 4000)
+      }
+    
+      doSomething((err, result) => {
+        if (err) {
+          return console.log(err)
+        }
+        return console.log(result)
+      })
+    </script>
+</body>
+</html>
